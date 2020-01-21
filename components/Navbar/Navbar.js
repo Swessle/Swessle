@@ -41,10 +41,11 @@ export default class Navbar extends Component {
 
 const Nav = styled.nav`
     width: 100%;
-    height: 64px;
+    height: 60px;
 	z-index: 9;
     position: relative;
     padding-top: 2px;
+    background-color: gray;
 `;
 
 const NavList = styled.ul`

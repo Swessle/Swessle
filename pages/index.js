@@ -4,6 +4,9 @@ import styled, { css, keyframes } from "styled-components";
 import { Flex, Box } from "reflexbox";
 import Layout from "../components/Layouts/Layout";
 import SectionOne from "../components/Section1/Section1"
+import SectionTwo from "../components/Section2/Section2"
+import SectionThree from "../components/Section3/Section3"
+import SectionFour from "../components/Section4/Section4"
 
 
 export default class index extends Component {
@@ -11,6 +14,9 @@ export default class index extends Component {
         return (
             <Layout>
                 <SectionOne/>
+                <SectionTwo/>
+                <SectionThree/>
+                <SectionFour/>
             </Layout>
         )
     }
