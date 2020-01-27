@@ -20,22 +20,22 @@ export default class SectionOne extends Component {
 const Section = styled.section`
     height: 100vh;
     width: auto;
-    background-color: lightgray;
+    background: white;
 `
 
 const HeadDiv = styled.div`
     padding-top: 160px;
-    padding-left: 60px;
+    text-align: center;
 `
 
 const HeaderText = styled.h1`
-    color: black;
+    color: #000020;
     font-weight: 700;
     font-size: 80px;
 `
 
 const SimpleSpan = styled.span`
-    color: blue;
+    color: #4630EB;
 `
 
 const Button = styled.button`
