@@ -38,7 +38,7 @@ const ServiceHeader = styled.h1`
 const Card = styled.div`
     background: white;
     width: 300px;
-    height: 500px;
+    height: 200px;
     margin: 0px 40px 0px 40px;
     text-align: center;
     box-shadow: -1px 15px 30px -12px black;
