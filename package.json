@@ -4,6 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"dependencies": {
+		"@brainhubeu/react-carousel": "^1.10.39",
+		"@zeit/next-css": "^1.0.1",
 		"next": "^9.1.4",
 		"next-redux-wrapper": "^4.0.1",
 		"react": "^16.12.0",
