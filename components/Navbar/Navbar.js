@@ -2,15 +2,19 @@ import React, { Component } from "react"
 import styled, { css } from "styled-components"
 import { Flex, Box } from "reflexbox"
 import Link from "next/link"
-import { StickyContainer } from "react-sticky"
+import { StickyContainer, Sticky } from "react-sticky"
 
 export default class Navbar extends Component {
     render() {
         return (
             <StickyContainer>
+                
                 <Nav>
-                    <Flex justifyContent="center">
-                        <Box>
+                    <Flex justifyContent="space-between">
+                        <Box pl={10}>
+                            <Swessle>Swessle</Swessle>
+                        </Box>
+                        <Box pr={10}>
                             <NavList>
 
                                 <Link href="#">
@@ -22,11 +26,15 @@ export default class Navbar extends Component {
                                 <Link href="#">
                                     <NavLink>Portfolio</NavLink>
                                 </Link>
+                                
+                                <Link href="#">
+                                    <NavLink>Features</NavLink>
+                                </Link>
 
 
 
                                 <Link href="#">
-                                    <NavLink>Contact</NavLink>
+                                    <Button>Contact</Button>
                                 </Link>
                                 
 
@@ -34,6 +42,7 @@ export default class Navbar extends Component {
                         </Box>
                     </Flex>
                 </Nav>
+                
             </StickyContainer>
         );
     }
@@ -41,25 +50,53 @@ export default class Navbar extends Component {
 
 const Nav = styled.nav`
     width: 100%;
-    height: 60px;
+    height: 64px;
 	z-index: 9;
     position: relative;
     padding-top: 2px;
-    background-color: gray;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 `;
 
 const NavList = styled.ul`
-	
+    margin-top: 10px;
 	list-style-type: none;
 	padding: 0px !important;
 `;
 
 
 const NavLink = styled.a`
-	margin: 0px 20px;
-	color: black;
+	margin: 0px 18px;
+	color: #000020;
 	cursor: pointer;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 700;
     
     
 `;
+
+const Swessle = styled.h1`
+    margin-top: 15px;
+    margin-left: 18px;
+    color: #000020;
+	font-size: 27px;
+`
+
+const Button = styled.button`
+    height: 40px;
+    width: 90px;
+    background-color: #4630EB;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    margin: 0px 18px;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: #6250EE;
+    }
+`
