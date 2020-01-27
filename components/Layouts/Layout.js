@@ -14,7 +14,7 @@ export default function Layout({ children }) {
                     content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
                 />
                 <meta name="description" content="ArtNeal" />
-                <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"></link>
             </Head>
             <GlobalStlye/>
             <Navbar></Navbar>
