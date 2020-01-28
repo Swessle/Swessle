@@ -4,6 +4,7 @@ import { Flex, Box } from "reflexbox"
 import Link from "next/link"
 import { StickyContainer, Sticky } from "react-sticky"
 
+
 export default class Navbar extends Component {
     render() {
         return (
@@ -12,7 +13,7 @@ export default class Navbar extends Component {
                 <Nav>
                     <Flex justifyContent="space-between">
                         <Box pl={10}>
-                            <Swessle>Swessle</Swessle>
+                            <Image src={"https://cdn.discordapp.com/attachments/599658324174307333/671515008202440774/swesslelogo.png"}></Image>
                         </Box>
                         <Box pr={10}>
                             <NavList>
@@ -75,11 +76,18 @@ const NavLink = styled.a`
     
 `;
 
-const Swessle = styled.h1`
-    margin-top: 15px;
+// const Swessle = styled.h1`
+//     margin-top: 15px;
+//     margin-left: 18px;
+//     color: #000020;
+// 	font-size: 27px;
+// `
+
+const Image = styled.img`
+    height: auto;
+    width: auto;
     margin-left: 18px;
-    color: #000020;
-	font-size: 27px;
+    margin-top: 10px;
 `
 
 const Button = styled.button`
