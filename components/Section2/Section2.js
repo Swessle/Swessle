@@ -10,10 +10,30 @@ export default class SectionTwo extends Component {
                 <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
                 <Flex textAlign="center" justifyContent="center">
                     <Box>
-                        <Card>Basic</Card>
+                        <Card>
+                            <div>
+                                <CardHeader>Basic</CardHeader>
+                                <CardPrice>$750+</CardPrice>
+                            </div>
+                            <CardList>
+                                <ListItem>Styling</ListItem>
+                                <ListItem>HTML or React</ListItem>
+                                <ListItem>Lorem ipsum</ListItem>
+                            </CardList>
+                        </Card>
                     </Box>
                     <Box>
-                        <Card>Custom</Card>
+                        <Card>
+                            <div>
+                                <CardHeader>Custom</CardHeader>
+                                <CardPrice>$1500+</CardPrice>
+                            </div>
+                            <CardList>
+                                <ListItem>Styling</ListItem>
+                                <ListItem>HTML or React</ListItem>
+                                <ListItem>Lorem ipsum</ListItem>
+                            </CardList>
+                        </Card>
                     </Box>
                 </Flex>
             </Section>
@@ -24,7 +44,7 @@ export default class SectionTwo extends Component {
 
 const Section = styled.div`
     background-color: #F3F3F3;
-    height: 50vh;
+    height: 60vh;
     width: auto;
     padding-bottom: 50px;
 `
@@ -43,12 +63,29 @@ const P = styled.p`
     padding-bottom: 30px;
 `
 
-const Card = styled.div`
-    background: white;
-    width: 300px;
-    height: 200px;
-    margin: 0px 40px 0px 40px;
-    text-align: center;
-    box-shadow: -1px 15px 30px -12px black;
+const Card = styled.article`
+    --radius: 10px;
+    border-radius: var(--radius);
+    box-shadow: 0 0 55px rgba(80,80,80,0.25);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`
+const CardHeader = styled.h2`
+    margin-bottom: -0.5em;
 `
 
+const CardPrice = styled.h1`
+    color: #4630EB;
+`
+
+const CardList = styled.ul`
+    display: grid;
+    padding: 1em 5em;
+    grid-row-gap: 0.6em;
+    justify-content: space-around;
+`
+const ListItem = styled.li`
+    list-style: none;
+`
