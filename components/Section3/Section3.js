@@ -13,42 +13,22 @@ export default class SectionThree extends Component {
                     <FeaturesText>
                         Features
                     </FeaturesText>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
                     <Carousel
                         infinite
-                        arrows 
+                        arrows
                     >
-                        
+
                         <CarouselDiv>
-                            <Flex>
-                                <Box>
-                                    <img src='https://via.placeholder.com/250'></img>
-                                </Box>
-                                <Box>
-                                    <Card>Test 1</Card>
-                                </Box>
-                            </Flex>
+                            <div>test</div>
                         </CarouselDiv>
 
                         <CarouselDiv>
-                            <Flex>
-                                <Box>
-                                    <img src='https://via.placeholder.com/250'></img>
-                                </Box>
-                                <Box>
-                                    <Card>Test 2</Card>
-                                </Box>
-                            </Flex>
+                            <div>test</div>
                         </CarouselDiv>
 
                         <CarouselDiv>
-                            <Flex>
-                                <Box>
-                                    <img src='https://via.placeholder.com/250'></img>
-                                </Box>
-                                <Box>
-                                    <Card>Test 3</Card>
-                                </Box>
-                            </Flex>
+                            <div>test</div>
                         </CarouselDiv>
                     </Carousel>
                 </FeatureDiv>
@@ -59,7 +39,7 @@ export default class SectionThree extends Component {
 }
 
 const Section = styled.div`
-    background-color: lightgrey;
+    background-color: white;
     height: 60vh;
     width: auto;
     marign: 0;
@@ -69,20 +49,23 @@ const FeatureDiv = styled.div`
 `
 
 const FeaturesText = styled.h1`
-    margin: 0;
     text-align: center;
+    margin: 0;
     padding-top: 30px;
+    color: #000020;
+    font-weight: 700;
+    font-size: 35px;
 `
-const CarouselDiv = styled.div`
-    
+const P = styled.p`
+    text-align: center;
+    opacity: 0.7;
+    padding-bottom: 30px;
 `
 
-const Card = styled.div`
-    background: white;
-    width: 300px;
-    height: 200px;
-    margin: 0px 40px 0px 40px;
+const CarouselDiv = styled.div`
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
-    box-shadow: -1px 15px 30px -12px black;
-    
 `

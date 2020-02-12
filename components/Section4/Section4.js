@@ -8,7 +8,7 @@ export default class SectionFour extends Component {
             <Section>
                 <PortfolioDiv>
                     <PortfolioText>
-                        Portfolio
+                        Our Work
                     </PortfolioText>
                 </PortfolioDiv>
             </Section>
@@ -28,7 +28,10 @@ const PortfolioDiv = styled.div`
 `
 
 const PortfolioText = styled.h1`
-    margin: 0;
     text-align: center;
+    margin: 0;
     padding-top: 30px;
+    color: #000020;
+    font-weight: 700;
+    font-size: 35px;
 `
