@@ -35,7 +35,7 @@ const ServiceHeader = styled.h1`
     padding-top: 30px;
     color: #000020;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
 `
 const P = styled.p`
     text-align: center;

@@ -22,18 +22,14 @@ export default class Navbar extends Component {
                                     <NavLink>Services</NavLink>
                                 </Link>
 
-
-
-                                <Link href="#">
-                                    <NavLink>Portfolio</NavLink>
-                                </Link>
-                                
                                 <Link href="#">
                                     <NavLink>Features</NavLink>
                                 </Link>
 
-
-
+                                <Link href="#">
+                                    <NavLink>Our Work</NavLink>
+                                </Link>
+                                
                                 <Link href="#">
                                     <Button>Contact</Button>
                                 </Link>
@@ -53,7 +49,7 @@ const Nav = styled.nav`
     width: 100%;
     height: 64px;
 	z-index: 9;
-    position: relative;
+    position: fixed;
     padding-top: 2px;
     background-color: white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
